@@ -1,171 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LearnHub - Discover, Learn & Grow</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            color: #222;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f7fb;
+        color: #222;
+    }
 
-        header {
-            background: #2563eb;
-            color: white;
-            padding: 20px;
-            text-align: center;
+    header {
+        background: #182848;
+        color: white;
+        padding: 25px 15px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 34px;
+        margin-bottom: 8px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 35px 15px 25px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        color: #666;
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 30px 20px;
+        border-radius: 15px;
+        text-align: center;
+        text-decoration: none;
+        color: #222;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        transition: 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .icon {
+        font-size: 45px;
+        margin-bottom: 12px;
+    }
+
+    .card h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .card p {
+        color: #666;
+        line-height: 1.5;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px 15px;
+        margin-top: 30px;
+        background: #182848;
+        color: white;
+    }
+
+    @media (max-width: 600px) {
+        .cards {
+            grid-template-columns: 1fr;
         }
 
         header h1 {
-            font-size: 32px;
-            margin-bottom: 8px;
+            font-size: 28px;
         }
+    }
+</style>
 
-        header p {
-            font-size: 16px;
-        }
+</head><body><header>
+    <h1>LearnHub</h1>
+    <p>Discover • Learn • Grow</p>
+</header><section class="hero">
+    <h2>Explore LearnHub</h2>
+    <p>Learn something new and useful every day.</p>
+</section><div class="container"><div class="cards">
 
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background: white;
-        }
+    <a class="card" href="#technology">
+        <div class="icon">💻</div>
+        <h3>Technology</h3>
+        <p>Explore computers, AI, internet, apps and modern technology.</p>
+    </a>
 
-        .hero h2 {
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
+    <a class="card" href="#knowledge">
+        <div class="icon">📚</div>
+        <h3>Knowledge</h3>
+        <p>Discover interesting facts, science, history and general knowledge.</p>
+    </a>
 
-        .hero p {
-            font-size: 18px;
-            color: #555;
-            max-width: 600px;
-            margin: auto;
-        }
+    <a class="card" href="#skills">
+        <div class="icon">🛠️</div>
+        <h3>Skills</h3>
+        <p>Learn practical skills that can help you in everyday life and work.</p>
+    </a>
 
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 13px 25px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
+    <a class="card" href="#world">
+        <div class="icon">🌍</div>
+        <h3>World</h3>
+        <p>Explore countries, cultures, places and important world topics.</p>
+    </a>
 
-        .section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+</div>
 
-        .section h2 {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-            color: #2563eb;
-        }
-
-        .card p {
-            color: #555;
-            line-height: 1.5;
-        }
-
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: #111827;
-            color: white;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <h1>LearnHub</h1>
-        <p>Learn something useful every day</p>
-    </header>
-
-    <section class="hero">
-        <h2>Discover. Learn. Grow.</h2>
-        <p>
-            A simple place to discover useful knowledge, skills,
-            ideas and interesting things from around the world.
-        </p>
-
-        <a href="#learn" class="button">Start Learning</a>
-    </section>
-
-    <section class="section" id="learn">
-        <h2>Explore Topics</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>💻 Technology</h3>
-                <p>
-                    Learn about computers, websites, apps,
-                    artificial intelligence and technology.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>📚 Knowledge</h3>
-                <p>
-                    Discover interesting facts, useful information
-                    and things you may not know.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>💡 Skills</h3>
-                <p>
-                    Learn practical skills that can help you
-                    in everyday life and work.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>🌍 World</h3>
-                <p>
-                    Explore interesting places, cultures,
-                    ideas and stories from around the world.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 LearnHub | Learn something new every day.</p>
-    </footer>
-
-</body>
+</div><footer>
+    <p>© 2026 LearnHub</p>
+    <p>Learn something. Build something. Grow.</p>
+</footer></body>
 </html>
